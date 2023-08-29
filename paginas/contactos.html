@@ -41,39 +41,43 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <form action="procesar.php" method="post">
-
-            <!--Input Nombre y Apellido-->
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
-            
-            <!--Input email-->
-            <label for="email">Correo Electronico:</label>
-            <input type="email" name="email" placeholder="nombre@servidor.com" required>
-
-            <!--Input telefono-->
-            <label for="telefono">Telefono de contacto:</label>
-            <input type="tel" name="telefono" placeholder="12345678" required>
-
-            <!--TextArea-->
-            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </main>
-    <div>
-        <p>Contactos</p>
-        <p>¿Tienes alguna pregunta técnica o comercial sobre nuestros servicios?</p>
-        <p>Numero de telefono</p>
-        <p>+54 (148) 223-6552</p>
-        <p>Email</p>
-        <p>consultas@bellospelos.com</p>
-        <p>Redes Sociales</p>
-        <img src="../assets/instagram.png" alt="">
-        <img src="../assets/facebook.png" alt="">
-        <img src="../assets/whatsapp.png" alt="">
-    </div>
+    <section class="contenedor-padre-contactos">
+        <div class="info-contacto">
+            <h1 class="h-cont">Contactos</h1>
+            <p class="p-cont">¿Tienes alguna pregunta técnica o comercial sobre nuestros servicios?</p>
+            <h2 class="h-cont">Numero de telefono</h2>
+            <p class="p-cont">+54 (148) 223-6552</p>
+            <h2 class="h-cont">Email</h2>
+            <p class="p-cont">consultas@bellospelos.com</p>
+            <h2 class="h-cont">Redes Sociales</h2>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="logo-instagram" class="instagram"></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="logo-facebook" class="facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/whatsapp.png" alt="logo-whatsapp" class="whatsapp"></a>
+        </div>
+        <main class="main-contactos">
+            <h2 class="h-cont"> Contacte con nosotros </h2>
+            <form action="procesar.php" method="post">
+                <div class="nom-cont">
+                    <!--Input Nombre y Apellido-->
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido*" required>
+                </div>
+                <div class="email-cont">
+                    <!--Input email-->
+                    <input type="email" name="email" placeholder="Email*" required>
+                    <!--Input telefono-->
+                    <input type="tel" name="telefono" placeholder="Telefono*" required>
+                </div>
+                </div>
+                <div>
+                <div class="mens-cont">
+                    <!--TextArea-->
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </section>
     <footer class="index-footer">
         <div class="info-footer">
             <p>
