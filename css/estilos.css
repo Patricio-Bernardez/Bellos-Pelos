@@ -245,7 +245,7 @@ footer{
 
 .contenedor-padre-contactos{
     /*box modeling*/
-    width: 60%;
+    width: 70%;
     height: auto;
     margin: 40px auto;
 
@@ -267,6 +267,9 @@ input{
     height: 35px;
     font-size: 25px;
 }
+textarea{
+    font-size: 25px;
+}
 .main-contactos{
     display: flex;
     flex-direction: column;
@@ -275,12 +278,28 @@ form{
     display: flex;
     flex-direction: column;
 }
-.nom-cont{
-
+.input-nom{
+    width: 524px;
+    margin-bottom: 20px;
 }
 .email-cont{
-
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 .mens-cont{
-
+    width: 524px;
+}
+.contac{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.boton-cont{
+    width: 70px;
+    height: 25px;
+}
+.link-cont{
+    flex-direction: row;
 }

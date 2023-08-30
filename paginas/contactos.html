@@ -42,7 +42,7 @@
         </nav>
     </header>
     <section class="contenedor-padre-contactos">
-        <div class="info-contacto">
+        <div class=" contac info-contacto">
             <h1 class="h-cont">Contactos</h1>
             <p class="p-cont">¿Tienes alguna pregunta técnica o comercial sobre nuestros servicios?</p>
             <h2 class="h-cont">Numero de telefono</h2>
@@ -50,16 +50,18 @@
             <h2 class="h-cont">Email</h2>
             <p class="p-cont">consultas@bellospelos.com</p>
             <h2 class="h-cont">Redes Sociales</h2>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="logo-instagram" class="instagram"></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="logo-facebook" class="facebook"></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/whatsapp.png" alt="logo-whatsapp" class="whatsapp"></a>
+            <div class="link-cont">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="logo-instagram" class="instagram"></a>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="logo-facebook" class="facebook"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/whatsapp.png" alt="logo-whatsapp" class="whatsapp"></a>
+            </div>
         </div>
-        <main class="main-contactos">
+        <main class="contac main-contactos">
             <h2 class="h-cont"> Contacte con nosotros </h2>
             <form action="procesar.php" method="post">
-                <div class="nom-cont">
+                <div>
                     <!--Input Nombre y Apellido-->
-                    <input type="text" name="nombre" placeholder="Nombre y Apellido*" required>
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido*" required class="input-nom">
                 </div>
                 <div class="email-cont">
                     <!--Input email-->
@@ -67,14 +69,11 @@
                     <!--Input telefono-->
                     <input type="tel" name="telefono" placeholder="Telefono*" required>
                 </div>
-                </div>
                 <div>
-                <div class="mens-cont">
                     <!--TextArea-->
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" class="mens-cont"></textarea>
                 </div>
-                
-                <button type="submit">Enviar</button>
+                <button type="submit" class="boton-cont">Enviar</button>
             </form>
         </main>
     </section>
