@@ -303,3 +303,211 @@ form{
 .link-cont{
     flex-direction: row;
 }
+
+
+/*CSS Servicios*/
+
+.contenedor-padre-servicios{
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+
+    /*Activacion FlexBox*/
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    /*Activacion Grid Servicios*/
+
+    display: grid;
+    grid-template-columns: 300px 900px 300px;
+    grid-template-rows: 300px 300px 300px;
+    justify-items: center;
+    align-items: center;
+    
+    grid-template-areas: 
+    "img1   img3    img2"
+    "img6   img3    img7"
+    "img4   img3    img5"
+    ;
+}
+
+.algo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pri-serv{
+    grid-area: img1;
+}
+.seg-ser{
+    grid-area: img2;
+}
+.ter-serv{
+    grid-area: img3;
+}
+.cua-serv{
+    grid-area: img4;
+}
+.qui-serv{
+    grid-area: img5;
+}
+
+.primera-serv{
+    width: 238px;
+    height: 224px;
+    border-radius: 50%;
+    opacity: 0.65;
+    border: solid 5px #8DC8FA;
+}
+.segunda-serv{
+    width: 238px;
+    height: 224px;
+    opacity: 0.65;
+    border-radius: 50%;
+    border: solid 5px #8DC8FA;
+}
+.tercera-serv{
+    width: 833px;
+    height: 787px;
+    opacity: 0.65;
+    border-radius: 50%;
+    border: solid 5px #8DC8FA;
+    overflow: hidden;
+    position: relative;
+}
+.cuarta-serv{
+    width: 238px;
+    height: 224px;
+    opacity: 0.65;
+    border-radius: 50%;
+    border: solid 5px #8DC8FA;
+}
+.quinta-serv{
+    width: 238px;
+    height: 224px;
+    opacity: 0.65;
+    border-radius: 50%;
+    border: solid 5px #8DC8FA;
+}
+.img-text{
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    stroke: outside;
+}
+.contenedor-padre{
+    width: 70%;
+    height: auto;
+    margin: 40px auto;
+    
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 50px;
+    
+    grid-template-areas: 
+    "img0    img7    img1    text1    text1     img4     img5     img6"
+    "text2   text2    img8   text3    text3     img9     text4    text4"
+    "img10   text5   text5   text5    text6     text6    text6    img11"
+    "text7   text7    img12  text8    text8     img13    text9    text9"
+    "img14   img15   img16  text10   text10     img17    img18    img19" 
+    ;
+}
+
+.cir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1{
+    grid-area: text1;
+    width: 300px;
+    height: 300px; 
+}
+.text2{
+    grid-area: text2;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text3{
+    grid-area: text3;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text4{
+    grid-area: text4;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text5{
+    grid-area: text5;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text6{
+    grid-area: text6;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text7{
+    grid-area: text7;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text8{
+    grid-area: text8;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text9{
+    grid-area: text9;
+    border: 2px solid #2C5C95;
+    background: #A4D3FB;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.text10{
+    grid-area: text10;
+    width: 300px;
+    height: 100px;
+    background-color: #999998;
+}
+.cir p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
